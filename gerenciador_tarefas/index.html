@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+
+    <link rel="stylesheet" href="../css/gerenciador_tarefas.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/cronometro.css">
+    <link rel="stylesheet" href="../css/pomodoro.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    
+
+    <script src="https://kit.fontawesome.com/3bca1562f7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="geral">
+        <div id="gerenciador">
+            <header>
+                <h1>Gerenciador de Tarefas</h1>
+                <form id="new-task-form">
+                    <input type="text" id="new-task-input" name="task" placeholder="O que você tem planejado?">
+
+                    <input type="submit" id="new-task-submit" value="Adicionar tarefa">
+                </form>
+            </header>
+
+            <main>
+                <section class="task-list">
+                    <div class="task-header">
+                        <h2>Tarefas</h2>
+                    </div>
+
+                    <div id="tasks">
+
+                        <!-- <div class="task">
+                            <div class="content">
+                                <input type="text" class="text" value="Minha tarefa brilhante" readonly>
+                            </div>
+
+                            <div class="actions">
+                                <button class="edit">Editar</button>
+                                <button class="delete">Deletar</button>
+                            </div>
+
+                        </div> -->
+
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
+
+        <div id="cronometro">
+            <div class="containerCro">
+                <h1>Cronômetro</h1>
+                <div class="cronometro">
+                    <div class="circleCro">
+                        <span class="horas">00</span> :
+                        <span class="minutos">00</span> :
+                        <span class="segundos">00</span>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <button onclick="iniciar()" class="comecar"><i class="fa-solid fa-play fa-sm"></i></button>
+                    <button onclick="pausar()" class="pausar"><i class="fa-solid fa-pause fa-sm"></i></button>
+                    <button onclick="reset()" class="reset"><i class="fa-solid fa-arrow-rotate-right fa-sm"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="pomodoro">
+            <div class="containerPom">
+                <h1>Pomodoro</h1>
+                <div class="painel">
+                    <p id="foco">Foco</p>
+                    <p id="pausa">Pausa</p>
+                </div>
+
+                <div class="timer">
+                    <div class="circlePom">
+                        <div class="time">
+                            <p id="minutes"></p>
+                            <p>:</p>
+                            <p id="seconds"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="startp" onclick="startTimer()"><i class="fa-solid fa-play fa-sm"></i></button>
+                    <button id="pausep" onclick="pausa()"><i class="fa-solid fa-pause fa-sm"></i></button>
+                    <button id="resetp" onclick="resetp()"><i class="fa-solid fa-arrow-rotate-right fa-sm"></i></button>
+                </div>
+            </div>
+        </div>
+        <button onclick="cor()" class="acessi"><img class="acessi" src="../img/light-mode.png" alt="acessibility"></button>
+    </div>
+    <script src="../js/gerenciador_tarefas.js"></script>
+    <script src="../js/cronometro.js"></script>
+    <script src="../js/pomodoro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --fonte-geral: 'Poppins', sans-serif;
+    
+    --cor-primaria: hsl(235, 35%, 19%);
+    --cor-secundaria: rgb(223, 1, 104);
+    --cor-terciaria: #ec4899;
+    --cor-quartenaria: #8b5cf6;
+    --cor-quintenaria: #eee;
+    --cor-auxiliar: hsl(235, 37%, 28%);
+    --cor-delete: hsl(348, 83%, 47%);
+    --cor-font: #fff;
+    --cor-sombra: hsl(235, 36%, 35%);
+}
